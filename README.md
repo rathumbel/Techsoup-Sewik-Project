@@ -8,7 +8,7 @@ A web application that visualizes the accidents on a map. The user can select th
 
 We prepared such an application which displays info about traffic accidents. We store all the information about the accidents in a database and share it in our application.
 
-![Frontend](frontend2.png)
+![Frontend](frontend.png)
 
 That's how our web application looks from the user's perspective. You can filter the results by using filtering options on the right hand side. All the accidents which fulfill the conditions will show up on the map.
 
@@ -25,7 +25,9 @@ Our tool is a full-stack web application. Backend is based on java  spring ( gra
 ![Model](model.png)
 
 The web server runs in Docker as a container. Thanks to that it is a cross platform application and will work on every computer after proper configuration of the Docker. It does not need Java to be installed an a machine and neither does PostgreSQL database. Apart from that Spring framework has been used and the code is written in Java. Gradle build-automation system has been used too.
-
+ 
+ Our initial Mockup 
+ ![Mockup](Mockup.png)
 
 The frontend part is made in ReactJS. It uses Leaflet to display the map. We had problem  with printing informstion on the  popups so we decided to print accident related details below   the map as a solution with corresponding markers. 
 
@@ -67,4 +69,4 @@ When a user opens the website the see a map on the left and search options to th
 # Unit Tests
 
 We prepared unit tests to check if the backend works correctly.
-The code can be found in AccidentControllerTest.java
+![Unit](83090076_1255106164878859_5746947605355560960_n.png)
