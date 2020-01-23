@@ -49,8 +49,8 @@ Thanks to Docker it is easy to build the app.
 
 ### Production build for frontend 
 To  deploy  Frontend on netfily 
-Run the command npm run build to create the production files.
-The files are created in the build/ folder.
+- `Run the command npm run build to create the production files.`
+- `The files are created in the build/ folder.`
 
 
 ### How to use it
