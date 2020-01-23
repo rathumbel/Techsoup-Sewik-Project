@@ -20,14 +20,14 @@ There are two reasons why such a tool is important.
 
 # Application Architecture
 
-Our tool is a full-stack web application. We have a web server which is connected to a PostgreSQL database. The databes stores information about single accidents. Here you can see which type of information is stored:
+Our tool is a full-stack web application. Backend is based on java  spring ( gradle  project ).We have a web server which is connected to a PostgreSQL database. The databes stores information about single accidents. Here you can see which type of information is stored:
 
 ![Model](model.png)
 
 The web server runs in Docker as a container. Thanks to that it is a cross platform application and will work on every computer after proper configuration of the Docker. It does not need Java to be installed an a machine and neither does PostgreSQL database. Apart from that Spring framework has been used and the code is written in Java. Gradle build-automation system has been used too.
 
-The frontend part is made in ReactJS. It uses Leaflet to display the map.
-Proper results are shown on the map in a form of pins. Details about the accidents are listed below the map.
+
+The frontend part is made in ReactJS. It uses Leaflet to display the map. We had problem  with printing informstion on the  popups so we decided to print accident related details below   the map as a solution with corresponding markers. 
 
 The client sends a request to the server to fetch the data about the accidents. Then the server sends all the data back in as a .json file. The filtering of the results is done on the frontend side. This feature is not working yet though.
 
@@ -46,6 +46,12 @@ Thanks to Docker it is easy to build the app.
 
  - `cd backend`
  - `./gradlew bootRun`
+
+####Production build for frontend 
+To  deploy  Frontend on netfily 
+Run the command npm run build to create the production files.
+The files are created in the build/ folder.
+
 
 ### How to use it
 
