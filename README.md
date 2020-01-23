@@ -27,6 +27,7 @@ Our tool is a full-stack web application. We have a web server which is connecte
 The web server runs in Docker as a container. Thanks to that it is a cross platform application and will work on every computer after proper configuration of the Docker. It does not need Java to be installed an a machine and neither does PostgreSQL database. Apart from that Spring framework has been used and the code is written in Java. Gradle build-automation system has been used too.
 
 The frontend part is made in ReactJS. It uses Leaflet to display the map.
+Proper results are shown on the map in a form of pins. Details about the accidents are listed below the map.
 
 The client sends a request to the server to fetch the data about the accidents. Then the server sends all the data back in as a .json file. The filtering of the results is done on the frontend side. This feature is not working yet though.
 
@@ -38,7 +39,7 @@ Thanks to Docker it is easy to build the app.
 
 #### run backend & frontend
 
- - install docker
+ - `install docker`
  - `docker-compose up --build`
  
 #### run only backend
