@@ -1,0 +1,55 @@
+
+
+.main{
+    display:-ms-flexbox;
+    text-align: left;
+
+}
+
+Map{
+    width:30%;
+    height:40%;
+    position: relative;
+    margin-top:-18px;
+    float:left;
+    right:-18px;
+    top:0px;
+}
+
+Form{
+    width:50%;
+    height:300px;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    position: absolute;
+    right:18px;
+    top:0px;
+    down:0px;
+    float:left;
+
+}
+
+.half{
+    width:50%;
+    padding:1.5em;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+    background:#2c3e50;
+    color:#fff;
+    font-size:16px;
+    line-height:24px;
+    border-radius: 0px;
+}
+.custom-popup .leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.1);
+}
+.custom-popup .leaflet-popup-tip-container {
+    width:30px;
+    height:15px;
+}
+.custom-popup .leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
