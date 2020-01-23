@@ -69,7 +69,16 @@ When a user opens the website the see a map on the left and search options to th
 5. Select parties of interest involved in the accidents
 6. Press "Wyświetl"
 
-# Unit Tests
 
-We prepared unit tests to check if the backend works correctly.
+# Unit Tests
+We prepared unit tests for controller and for repository :
+
+- `Repository Tests :`
+- test_findAllEmpty  : To find any empty accidents in the database 
+
+- `Controller Tests :`
+ create_accident(): To check if accidents are created correctly 
+ test_deleteById() : To check if accidents deleted by id are deleted from the database 
+ test_addAccident : To check if accident is add , it gets accidents by id and checks if it's not null 
+ 
 ![Unit](83090076_1255106164878859_5746947605355560960_n.png)
