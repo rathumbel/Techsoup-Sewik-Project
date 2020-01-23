@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AccidentRepositotyTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AccidentRepositotyTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.dupa.accident.html">com.example.dupa.accident</a> &gt; AccidentRepositotyTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.030s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test_findAll()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test_findAllEmpty()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-01-23 13:12:53.792  INFO 4676 --- [    Test worker] b.t.a.o.j.DataJpaTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.dupa.accident.AccidentRepositotyTest], using SpringBootContextLoader
+2020-01-23 13:12:53.793  INFO 4676 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.dupa.accident.AccidentRepositotyTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-23 13:12:53.793  INFO 4676 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.dupa.accident.AccidentRepositotyTest]: AccidentRepositotyTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-23 13:12:53.803  INFO 4676 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.dupa.DupaApplication for test class com.example.dupa.accident.AccidentRepositotyTest
+2020-01-23 13:12:53.808  INFO 4676 --- [    Test worker] b.t.a.o.j.DataJpaTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-01-23 13:12:53.808  INFO 4676 --- [    Test worker] b.t.a.o.j.DataJpaTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@31dd3a2f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@90fbbdf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@276aa2f1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c98e230, org.springframework.test.context.support.DirtiesContextTestExecutionListener@444cbfce, org.springframework.test.context.transaction.TransactionalTestExecutionListener@30e925db, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4266741d, org.springframework.test.context.event.EventPublishingTestExecutionListener@19b48703, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3827e934, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4199c416, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@30ae86a4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@d1f932d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@af6b5f3]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2020-01-23 13:12:53.846  INFO 4676 --- [    Test worker] c.e.d.accident.AccidentRepositotyTest    : Starting AccidentRepositotyTest on DESKTOP-37CKKL4 with PID 4676 (started by Avetha in C:\Users\Avetha\Desktop\Nowy folder (7)\backend)
+2020-01-23 13:12:53.847  INFO 4676 --- [    Test worker] c.e.d.accident.AccidentRepositotyTest    : No active profile set, falling back to default profiles: default
+2020-01-23 13:12:53.926  INFO 4676 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-23 13:12:53.926  INFO 4676 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-23 13:12:53.934  INFO 4676 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
+2020-01-23 13:12:53.941  INFO 4676 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2020-01-23 13:12:53.969  INFO 4676 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:6449b048-26f0-4914-b457-fa89d020b27f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-01-23 13:12:54.020  INFO 4676 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-23 13:12:54.024  INFO 4676 --- [    Test worker] o.h.spatial.integration.SpatialService   : HHH80000001: hibernate-spatial integration enabled : true
+2020-01-23 13:12:54.029  INFO 4676 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table accident_model if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table accident_model (id bigint not null, bicycles boolean not null, big_cars boolean not null, cars boolean not null, city varchar(255), coordinates varchar(255), date timestamp, detailed_type varchar(255), motocycles boolean not null, pedestrians boolean not null, state varchar(255), street varchar(255), trams boolean not null, type varchar(255), primary key (id))
+2020-01-23 13:12:54.053  INFO 4676 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-23 13:12:54.053  INFO 4676 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-23 13:12:54.133  INFO 4676 --- [    Test worker] c.e.d.accident.AccidentRepositotyTest    : Started AccidentRepositotyTest in 0.322 seconds (JVM running for 14.581)
+2020-01-23 13:12:54.141  INFO 4676 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@3a7be457 testClass = AccidentRepositotyTest, testInstance = com.example.dupa.accident.AccidentRepositotyTest@7c084dd4, testMethod = test_findAll@AccidentRepositotyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@59e5840 testClass = AccidentRepositotyTest, locations = '{}', classes = '{class com.example.dupa.DupaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7d2ec77, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@7f19c041, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@45063338, [ImportsContextCustomizer@451ed9a3 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30e09c35, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6be36fb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@6a7ee420]; rollback [true]
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into accident_model (bicycles, big_cars, cars, city, coordinates, date, detailed_type, motocycles, pedestrians, state, street, trams, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select accidentmo0_.id as id1_0_, accidentmo0_.bicycles as bicycles2_0_, accidentmo0_.big_cars as big_cars3_0_, accidentmo0_.cars as cars4_0_, accidentmo0_.city as city5_0_, accidentmo0_.coordinates as coordina6_0_, accidentmo0_.date as date7_0_, accidentmo0_.detailed_type as detailed8_0_, accidentmo0_.motocycles as motocycl9_0_, accidentmo0_.pedestrians as pedestr10_0_, accidentmo0_.state as state11_0_, accidentmo0_.street as street12_0_, accidentmo0_.trams as trams13_0_, accidentmo0_.type as type14_0_ from accident_model accidentmo0_
+2020-01-23 13:12:54.158  INFO 4676 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@3a7be457 testClass = AccidentRepositotyTest, testInstance = com.example.dupa.accident.AccidentRepositotyTest@7c084dd4, testMethod = test_findAll@AccidentRepositotyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@59e5840 testClass = AccidentRepositotyTest, locations = '{}', classes = '{class com.example.dupa.DupaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7d2ec77, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@7f19c041, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@45063338, [ImportsContextCustomizer@451ed9a3 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30e09c35, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6be36fb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+2020-01-23 13:12:54.161  INFO 4676 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@3a7be457 testClass = AccidentRepositotyTest, testInstance = com.example.dupa.accident.AccidentRepositotyTest@5e5536b4, testMethod = test_findAllEmpty@AccidentRepositotyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@59e5840 testClass = AccidentRepositotyTest, locations = '{}', classes = '{class com.example.dupa.DupaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7d2ec77, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@7f19c041, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@45063338, [ImportsContextCustomizer@451ed9a3 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30e09c35, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6be36fb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@6a7ee420]; rollback [true]
+Hibernate: select accidentmo0_.id as id1_0_, accidentmo0_.bicycles as bicycles2_0_, accidentmo0_.big_cars as big_cars3_0_, accidentmo0_.cars as cars4_0_, accidentmo0_.city as city5_0_, accidentmo0_.coordinates as coordina6_0_, accidentmo0_.date as date7_0_, accidentmo0_.detailed_type as detailed8_0_, accidentmo0_.motocycles as motocycl9_0_, accidentmo0_.pedestrians as pedestr10_0_, accidentmo0_.state as state11_0_, accidentmo0_.street as street12_0_, accidentmo0_.trams as trams13_0_, accidentmo0_.type as type14_0_ from accident_model accidentmo0_
+2020-01-23 13:12:54.167  INFO 4676 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@3a7be457 testClass = AccidentRepositotyTest, testInstance = com.example.dupa.accident.AccidentRepositotyTest@5e5536b4, testMethod = test_findAllEmpty@AccidentRepositotyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@59e5840 testClass = AccidentRepositotyTest, locations = '{}', classes = '{class com.example.dupa.DupaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7d2ec77, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@7f19c041, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@45063338, [ImportsContextCustomizer@451ed9a3 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30e09c35, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6be36fb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.1</a> at 23 sty 2020, 13:12:54</p>
+</div>
+</div>
+</body>
+</html>
