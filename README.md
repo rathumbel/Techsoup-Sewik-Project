@@ -31,7 +31,7 @@ The frontend part is made in ReactJS. It uses Leaflet to display the map. We had
 The client sends a request to the server to fetch the data about the accidents. Then the server sends all the data back in as a .json file. The filtering of the results is done on the frontend side. This feature is not working yet though.
 
 
- ### How our application look like 
+ ### How our application looks like 
 ![Frontend](frontend.png)
 
 That's how our web application looks from the user's perspective. You can filter the results by using filtering options on the right hand side. All the accidents which fulfill the conditions will show up on the map.
