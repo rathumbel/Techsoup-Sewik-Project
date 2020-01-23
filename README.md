@@ -6,7 +6,7 @@ Accidents are sadly an everyday occurrence, new laws and regulations are constan
 
 A web application that visualizes the accidents on a map. The user can select the type of accident, time interval, region, etc. This will help utilize the Police database, thus possibly improving road safety because it will greatly speed up the process of analyzing accidents. Help determine the most dangerous intersections and the reasons behind it. Furthermore, this will be a great tool for the cities, people can easily spot the worst intersections and take action.<br/>
 
-We prepared a web application which displays info about traffic accidents. We store all the information about the accidents in a database and share it in our application.
+We prepared such an application which displays info about traffic accidents. We store all the information about the accidents in a database and share it in our application.
 
 ![Frontend](frontend2.png)
 
@@ -28,13 +28,23 @@ The web server runs in Docker as a container. Thanks to that it is a cross platf
 
 The frontend part is made in ReactJS. It uses Leaflet to display the map.
 
-The client sends a request to the server to fetch the data about the accidents. Then the server sends all the data back in as a .json file. The filtering of the results is done on the frontend side.
+The client sends a request to the server to fetch the data about the accidents. Then the server sends all the data back in as a .json file. The filtering of the results is done on the frontend side. This feature is not working yet though.
 
 # Manual
 
 ### How to build the application and run it
 
+Thanks to Docker it is easy to build the app.
 
+#### run backend & frontend
+
+ - install docker
+ - `docker-compose up --build`
+ 
+#### run only backend
+
+ - `cd backend`
+ - `./gradlew bootRun`
 
 ### How to use it
 
@@ -46,3 +56,8 @@ When a user opens the website the see a map on the left and search options to th
 4. Options "Rodzaj zdarzenia", "Ulica", and "Miejscowość" can be selected but aren't necessary.
 5. Select parties of interest involved in the accidents
 6. Press "Wyświetl"
+
+# Unit Tests
+
+We prepared unit tests to check if the backend works correctly.
+The code can be found in AccidentControllerTest.java
