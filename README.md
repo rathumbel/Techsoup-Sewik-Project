@@ -95,11 +95,17 @@ We prepared unit tests for controller and for repository :
 
 # Problems we encounter :
 1.Docker worked on one computer 
+
 2.Worker with React 
+
 3.Display information from database as popups on map
 
+
 # Ways to fix our problems :
+
 1.Deloying our project to aws and adding security to it .
+
+
 2.Learning more how to work on maps with react.
 
 
