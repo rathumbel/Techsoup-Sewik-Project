@@ -15,6 +15,12 @@ There are two reasons why such a tool is important.
 * If a certain intersection on a road is dangerous and not well-planned many accidents happen there. Using our tool it's easy to see which spots or intersections should be rebuild to make roads safe.
 * The information about the accident can be added in real time. It may be helpful for drivers who can change their route and not waste their time in traffic jams.
 
+### Where did the project idea came from ?
+
+We got the idea from a foundation called techsoup that holds hackthon each tuesday for one hour .
+
+
+
 # Application Architecture
 
 Our tool is a full-stack web application. Backend is based on java  spring ( gradle  project ).We have a web server which is connected to a PostgreSQL database. The databes stores information about single accidents. Here you can see which type of information is stored:
@@ -28,7 +34,7 @@ The web server runs in Docker as a container. Thanks to that it is a cross platf
 
 The frontend part is made in ReactJS. It uses Leaflet to display the map. We had problem  with printing informstion on the  popups so we decided to print accident related details below   the map as a solution with corresponding markers. 
 
-The client sends a request to the server to fetch the data about the accidents. Then the server sends all the data back in as a .json file. The filtering of the results is done on the frontend side. This feature is not working yet though.
+The client sends a request to the server to fetch the data about the accidents. Then the server sends all the data back in as a .json file. The filtering of the results is done on the frontend side. This feature is not working yet though.Since we had problems connecting to backend (because of docker) we decided to check if frontend works is to use Mockserver and manually fill our model  in the fake server called accidents and it was working normal and we could display the data under the map.
 
 
  ### How our application looks like 
@@ -40,10 +46,10 @@ That's how our web application looks from the user's perspective. You can filter
 
 ### How to build the application and run it
 
-Thanks to Docker it is easy to build the app.
+ In theory Thanks to Docker it is easy to build the app.
+ In reality We had problems with installing it  
 
-#### run backend & frontend
-
+#### run docker 
  - `install docker`
  - `docker-compose up --build`
  
@@ -51,6 +57,10 @@ Thanks to Docker it is easy to build the app.
 
  - `cd backend`
  - `./gradlew bootRun`
+
+#### run only Frontend
+- `npm install`
+- `npm run`
 
 ### Production build for frontend 
 To  deploy  Frontend on netfily 
@@ -82,3 +92,14 @@ We prepared unit tests for controller and for repository :
  test_addAccident : To check if accident is add , it gets accidents by id and checks if it's not null 
  
 ![Unit](83090076_1255106164878859_5746947605355560960_n.png)
+
+# Problems we encounter :
+1.Docker worked on one computer 
+2.Worker with React 
+3.Display information from database as popups on map
+
+# Ways to fix our problems :
+1.Deloying our project to aws and adding security to it .
+2.Learning more how to work on maps with react.
+
+
