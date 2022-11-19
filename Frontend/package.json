@@ -11,7 +11,7 @@
     "leaflet": "latest"
   },
   "devDependencies": {
-    "react-scripts": "1.0.0",
+    "react-scripts": "5.0.1",
     "reactstrap": "^8.2.0"
   },
   "scripts": {
